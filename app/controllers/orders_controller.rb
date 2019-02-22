@@ -1,7 +1,9 @@
 class OrdersController < ApplicationController
 
   def show
-    @order = Order.find(params[:id])
+    @order = Order.find(params[:id]) #id will be the order id
+    #Order.find(2).line_items[0].product_id ##specifci number
+    #@product = Product.find(@order.line_items[0].product_id)
   end
 
   def create
