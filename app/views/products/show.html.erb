@@ -26,6 +26,22 @@
       </div>
     </div>
 
-  </article>
+  </article><br>
+  
+  <%=form_for [@product, @review] do |f| %>
+    <%= f.text_area :description, size: "25x3" %><br>
+    <%= f.select :rating, [['1','1'],['2','2'],['3','3'],['4','4'],['5','5']] %>
+    <%= f.submit "Create" %>
+  <% end %>
+  
 
+  <article>
+  <div class="review">
+    <dt>Review</dt>
+    <% @product.reviews.each do |detail| %>
+    Rating: <%= detail.rating %><br>
+    Description: <%= detail.description %></p>
+    <% end %>
+  </div>
+  </article>
 </section>

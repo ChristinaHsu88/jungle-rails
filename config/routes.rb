@@ -25,6 +25,9 @@ Rails.application.routes.draw do
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
 
+  resources :products do
+    resources :reviews, only: [:create]
+  end
   #new order details
   #resources :orders, only: [:create, :show]
 

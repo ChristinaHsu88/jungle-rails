@@ -56,7 +56,7 @@ cat1.products.create!({
   description: Faker::Hipster.paragraph(4),
   image: open_asset('apparel3.jpg'),
   quantity: 4,
-  price: 34.49
+  price: 34.49,
 })
 
 cat1.products.create!({
@@ -134,3 +134,8 @@ cat3.products.create!({
 
 
 puts "DONE!"
+
+## REVIEWS
+puts "Finding products by reviews"
+
+Review.create!(product_id: 3, user_id: 2, description: 'GREAT PRODUCTS', rating: 5)
