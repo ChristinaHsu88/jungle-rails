@@ -138,4 +138,5 @@ puts "DONE!"
 ## REVIEWS
 puts "Finding products by reviews"
 
-Review.create!(product_id: 3, user_id: 2, description: 'GREAT PRODUCTS', rating: 5)
+Review.create!(product_id: 3, user_id: 2, description: 'GREAT PRODUCTS', rating: 5) #one review
+
