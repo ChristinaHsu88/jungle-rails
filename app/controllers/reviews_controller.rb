@@ -1,4 +1,7 @@
 class ReviewsController < ApplicationController
+    
+    before_filter
+
     def create
         #create an instance
       review = Review.new(review_params)

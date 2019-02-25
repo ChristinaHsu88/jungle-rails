@@ -38,7 +38,7 @@
   <article>
   <div class="review">
     <dt>Review</dt>
-    <% @product.reviews.each do |detail| %>
+    <% @product.reviews.reverse.each do |detail| %>
     Rating: <%= detail.rating %><br>
     Description: <%= detail.description %></p>
     <% end %>
