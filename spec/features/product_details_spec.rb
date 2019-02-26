@@ -23,7 +23,6 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
     sleep 5
     # DEBUG / VERIFY
     save_screenshot
-   
   end
 
 end
