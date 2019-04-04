@@ -2,12 +2,19 @@
 
 A mini e-commerce application built with Rails 4.2. for learning purpose
 
-## Setup
-1. Fork & Clone
+## FUNCTIONALITIES
+
+## SETUO
+1. Clone this repository by `git clone git@github.com:ChristinaHsu88/jungle-rails.git`
+2. Go to the directory by` cd jungle-rails`
 2. Run `bundle install` to install dependencies
+    * make sure ruby version is 2.3.0. If not, you can run `rvm use 2.3.0`
+    * Mac OSX issue with imagemagick:
+      Run `brew unlink imagemagick` and then `brew install imagemagick@6 && brew link imagemagick@6 --force`to resolve the installation issue.
 3. Create `config/database.yml` by copying `config/database.example.yml`
 4. Create `config/secrets.yml` by copying `config/secrets.example.yml`
 5. Run `bin/rake db:reset` to create, load and seed db
+    * Run `postgres -D /usr/local/var/postgres` in command line if encounter DB connection isse.
 6. Run `bin/rails s -b 0.0.0.0` to start the server
 
 ## Stripe Testing
