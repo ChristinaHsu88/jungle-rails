@@ -34,4 +34,6 @@ Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
 
 ## SCREENSHOTS
 
-!["Screenshot of single user page"](https://github.com/ChristinaHsu88/)
+!["Screenshot of main page"](https://github.com/ChristinaHsu88/jungle-rails/blob/master/docs/Screenshot1.png)
+
+!["Screenshot of soldout page"](https://github.com/ChristinaHsu88/jungle-rails/blob/master/docs/Screenshot2.png)
